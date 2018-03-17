@@ -63,7 +63,7 @@ declare module 'moment' {
   function recur (start?: moment.MomentInput, end?: moment.MomentInput): Recur
   function recur (options?: Recur.Options): Recur
 }
-
+moment.fn = {};
 moment.fn.monthWeek = function (this: moment.Moment, week?: number): number | moment.Moment {
 
   if (week === undefined) {
